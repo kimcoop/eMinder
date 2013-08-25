@@ -32,5 +32,6 @@ module Twilio
     config.autoload_paths += %W(#{config.root}/app/workers)
     config.autoload_paths += ["#{config.root}/lib"]
     config.eager_load_paths += %W(#{config.root}/app/workers)
+    config.eager_load_paths += %W(#{config.root}/lib) # this is for Sidekiq
   end
 end
