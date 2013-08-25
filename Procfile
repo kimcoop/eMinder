@@ -1,3 +1,3 @@
 web: bundle exec rails s -p $PORT
-worker: bundle exec sidekiq
 redis: redis-server
+worker: bundle exec sidekiq -c 5 -v

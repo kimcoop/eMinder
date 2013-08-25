@@ -152,6 +152,7 @@ DEPENDENCIES
   pg
   puma
   rails (= 4.0.0)
+  redis
   sass-rails (~> 4.0.0)
   sdoc
   sidekiq

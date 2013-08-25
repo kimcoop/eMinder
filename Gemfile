@@ -20,6 +20,7 @@ group :development do
   gem 'slim', '>= 1.1.0'
   gem 'sinatra', '>= 1.3.0', require: nil
   gem 'foreman'
+  gem 'redis'
 end
 
 
