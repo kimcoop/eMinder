@@ -17,4 +17,5 @@
 
 /config/database.yml
 /config/settings/core-settings.yml
+.env
 dump.rdb

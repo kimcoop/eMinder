@@ -16,10 +16,6 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-CORE_SETTINGS = YAML.load(File.read(File.expand_path('../settings/core-settings.yml', __FILE__)))
-CORE_SETTINGS.merge! CORE_SETTINGS.fetch(Rails.env, {})
-CORE_SETTINGS.symbolize_keys!
-
 module Twilio
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
